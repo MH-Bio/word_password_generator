@@ -1,6 +1,6 @@
 # Word Password Generator
 
-This is a command-line password generator written in Python that creates secure, customizable passwords that are easy for humans to remember.  It randomly selects from a list of ~2000 common words and randomly formats them into a password.  If a number is required it can be optionally added; the number will be put randomly in the word list.
+This is a command-line password generator written in Python that creates secure, customizable passwords that are easy for humans to remember.  It randomly selects from a list of ~7000 common words and randomly formats them into a password.  If a number is required it can be optionally added; the number will be put randomly in the word list.
 
 ---
 
@@ -9,8 +9,8 @@ This is a command-line password generator written in Python that creates secure,
 This work is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 **Author:** Michael C. Hernandez  
-**Date:** February 5, 2026
-**Email:** michaelhern@hotmail.com
+**Date:** February 5, 2026  
+**Email:** michaelhern@hotmail.com  
 
 ---
 
@@ -44,7 +44,7 @@ python word_password_generator.py [OPTIONS]
 
 ## Example: Generate a 4-word password with a number
 
-python password_generator.py -l 4 -n
+python word_password_generator.py -l 4 -n
 
 ---
 

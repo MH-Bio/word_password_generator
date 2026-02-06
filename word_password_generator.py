@@ -17,7 +17,7 @@ import secrets
 import sys
 
 # Word List
-f = open('words.txt', 'r')
+f = open('eff_large_wordlist.txt', 'r')
 raw_list = f.read()
 WORD_LIST = raw_list.split("\n") # contains 2001 words
 
@@ -34,6 +34,7 @@ def generate_password(
     for i in range(0, num_of_words):
         word_index = secrets.randbelow(len(WORD_LIST) + 1) # Generate a random index for the word list
         selected_word = WORD_LIST[word_index]
+        selected_word = selected_word.split("\t")[-1]
         selected_word = selected_word[0].upper() + selected_word[1:].lower() # Make the first letter upper case
         password_word_list.append(selected_word)
 
